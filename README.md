@@ -3,6 +3,8 @@ load exif from photos and make dataframe
 
 usage example
 ```python
+import pandas as pd
+from pathlib import Path
 from exif_to_dataframe import get_exif_df
 root_path = Path("path/to/photo_directory") # select photo folder
 path_list = list(root_path.glob("**/*.JPG")) # get jpeg path list
